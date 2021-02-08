@@ -36,4 +36,6 @@ class Alumno(Persona):
 
 p1 = Persona('Pepe', 'pp@sample.com', 32)
 a1 = Alumno('Ernesto', 'er@sample.com', 23, 'Python')
+
+p1.saludar(a1.getNombre())
 a1.saludar(p1.getNombre())

@@ -5,7 +5,7 @@ class Persona():
         self.__correo = correo
         self.__edad = edad
 
-    def adoMascota (self, mascota):
+    def adoptaMascota (self, mascota):
         self.__mascota = mascota
 
     def mostrarMascota(self):
@@ -33,5 +33,9 @@ class Mascota():
         return f'Soy un {self.especie()} y me llama "{self.nombre()}".'
 
 p1 = Persona('Maria', 'ma@samle.es', 34)
-p1.adoMascota(Mascota('perro', 'Rufus'))
+p2 = Persona('Manuel', 'm@samle.es', 34)
+m1 = Mascota('gato', 'Cesar')
+p1.adoptaMascota(Mascota('perro', 'Rufus'))
+p2.adoptaMascota(m1)
 p1.mostrarMascota()
+p2.mostrarMascota()

@@ -19,9 +19,9 @@ class Usuario(Ciudadano, Estudiante):
         return f'Soy {self.nombre}, estudio {self.curso} y mi clave es ({self.clave})'
 
     # Polimordfismo    
-    # def saludar(self):
-    #     Ciudadano.saludar(self)
-    #     Estudiante.saludar(self)
+    def saludar(self):
+        Ciudadano.saludar(self)
+        Estudiante.saludar(self)
 
 user1 = Usuario('Pepe', 'Phyton', '1234')
 print(user1)
