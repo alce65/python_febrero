@@ -29,7 +29,7 @@ Walter Jon Williams
 Barcelona: Martinez Roca 1995
 Novela. La Tierra está dominada por compañías; su economía y los mercados dependen de decisiones tomadas en asépticos despachos orbitales. Los antiguos gobiernos terrestres desaparecieron en medio de un conflicto bélico que desintegró por completo sus esferas de influencia. La población terrestre depende de la tecnología orbital en su lucha por la supervivencia, y en los núcleos urbanos impera la ley del más fuerte. En medio de la anarquía reinante, dos personajes singulares luchan día a día por mantener su independencia. El Cowboy, un tanquista que se gana la vida como contrabandista a los mandos de un vehículo cibernético blindado, y Sarah, una buscona que trabaja como guardaespaldas o prostituta y que sueña con poder abandonar el pozo gravitatorio. 
 
-## Cuando la gravedad falla (1987)
+## Cuando falla la gravedad (1987)
 George Alec Effinger
 Barcelona: Martinez Roca, 1989
 Novela. El Budayén, los bajos fondos de una ciudad árabe anónima, está construido al lado del cementerio, y quien se interna en sus callejones lo hace consciente del peligro que corre: ni sus habitantes -prostitutas, proxenetas y traficantes de drogas- ni la policía se preocupan demasiado si un desconocido aparece acuchillado y tirado en la esquina. 
