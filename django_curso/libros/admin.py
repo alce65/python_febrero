@@ -8,4 +8,4 @@ class LibroAdmin(admin.ModelAdmin):
 
 @admin.register(Autor)
 class AutorAdmin(admin.ModelAdmin):
-    pass
+    list_display = ['apellidos', 'nombre', 'fecha_nacim']
