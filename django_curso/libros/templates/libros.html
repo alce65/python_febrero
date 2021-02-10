@@ -1,11 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Libros - Curso Django</title>
-</head>
-<body>
-    <h1>Libros</h1>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}
+    Libros
+{% endblock title %}
+
+{% block main %}
+    <h2>Lista de libros</h2>
+    <ul>
+        {% for libro in libros %}
+        <li>
+            <a href="{% url 'libro' libro.id  %}">
+                <p>
+                    {{ libro.titulo }}
+                </p>
+            </a>
+
+            <p>
+                {% for autor in libro.autor.all %}
+                <span> {{autor.nombre}} {{autor.apellidos}} </span>
+                {% endfor %}
+            </p>
+        </li>
+        {% endfor %}
+    </ul>
+    
+
+{% endblock main %}

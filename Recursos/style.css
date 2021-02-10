@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {    
+    display: flex;
+    flex-direction: column;    
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabecera de varias líneas: header y menu */
+.header-wrapper { 
+    flex: 4 0 10%;
+    display: flex;
+    flex-direction: column;
+    color: bisque;
+    background-color: brown;
+}
+/* Cabecera de varias columnas: h1 y logo */
+.header-wrapper>header {
+    margin: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1.title {
+    flex: 8 0 10%;
+}
+
+div.logo {
+    flex: 2 0 10%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+main {
+    flex: 20 0 10%;
+    margin: 1rem 2rem;
+}
+
+body>footer {
+    flex: 1 0 10%;
+    color: bisque;
+    background-color: brown;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.libros {
+    padding: 1rem 1rem;
+}
+
+.libros ul {
+    list-style: none;
+}
+
+.libros li {
+    margin: 1rem 0;
+}
+
+/* Contenedor del titulo */
+.libros a {
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 5px;
+    width: fit-content;    
+}
+
+.libros a.libro {
+    background-color: bisque;
+    color: maroon;
+    font-weight: 800;
+    padding: 0rem 1rem;
+}
+
+/* Contenedor del autor */
+.libros a.autor {
+    padding: 0.2rem 1rem;
+    color: bisque;
+    background-color: maroon;
+}
+
+.libro header {
+    background-color: bisque;
+    color: maroon;
+    padding: 1rem;
+}
+
+.libro .main {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.libro .data {
+    flex: 2 0 10%;
+    padding: 0 1rem;
+}
+
+.libro .image {
+    flex: 1 0 10%;
+}
+
+.libro img {
+    max-width: 100%;
+}
+
+footer.back {
+    background-color: bisque;
+    color: maroon;
+    padding: 0.5rem 1rem;
+}
+
+footer.back a {
+    display: block;
+    color: inherit;
+    width: 100%;
+    text-align: center;
+}
+
+.user {
+    width: 50%;
+}
+
+.user .form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.user input, 
+.user select {
+    margin-top: 0.5rem;
+    border: none;
+    border-bottom: 1px solid gray;
+}

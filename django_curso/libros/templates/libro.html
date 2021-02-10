@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Libro {{ libro.id }}
+{% endblock title %}
+
+{% block main %}
+    <h2>Datos de {{ libro.titulo }} ({{ libro.anio }})</h2>
+    <p>
+        {{ libro.get_genero_display }}
+    </p>
+    <p>
+        {% for autor in libro.autor.all %}
+        <span> {{autor.nombre}} {{autor.apellidos}} </span>
+        {% endfor %}
+    </p>
+    <p>
+        {{ libro.lugar_edicion }}: 
+        {{ libro.editorial }}, 
+        {{ libro.año_edicion }}
+    </p>
+    <p>
+        {{ libro.descripcion }}
+    </p>
+
+    <a href="{% url 'libros'  %}">Volver</a>
+
+{% endblock main %}

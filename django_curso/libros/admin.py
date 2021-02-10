@@ -4,7 +4,7 @@ from .models import Libro, Autor
 
 @admin.register(Libro)
 class LibroAdmin(admin.ModelAdmin):
-    pass
+    list_display = ['titulo', 'anio', 'editorial', 'año_edicion']
 
 @admin.register(Autor)
 class AutorAdmin(admin.ModelAdmin):

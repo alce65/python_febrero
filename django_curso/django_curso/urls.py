@@ -23,5 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', portfolio.views.home, name="home" ),
     path('portfolio/', portfolio.views.portfolio, name='portfolio'),
-    path('libros/', libros.views.libros, name='libros')
+    path('libros/', libros.views.libros, name='libros'),
+    path('libros/<int:libro_id>', libros.views.libro_detail, name='libro'),
 ]
