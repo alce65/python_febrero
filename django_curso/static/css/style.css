@@ -34,12 +34,24 @@ h1.title {
 }
 
 div.logo {
-    flex: 2 0 10%;
+    flex: 1 0 10%;
 }
 
 .logo img {
     width: 100%;
 }
+
+.header-wrapper>nav ul {
+    list-style: none;
+    display: flex;
+} 
+
+.header-wrapper>nav a {
+    display: block;
+    padding-left: 1rem;
+    text-decoration: none;
+    color: inherit;
+} 
 
 main {
     flex: 20 0 10%;

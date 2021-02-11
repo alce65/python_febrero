@@ -18,6 +18,7 @@ from django.urls import path
 
 import portfolio.views
 import libros.views
+import usuarios.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,4 +27,8 @@ urlpatterns = [
     path('libros/', libros.views.libros, name='libros'),
     path('libros/<int:libro_id>', libros.views.libro_detail, name='libro'),
     path('autor/<int:autor_id>', libros.views.autor, name='autor'),
+    path('usuarios/', usuarios.views.usuarios, name='usuarios'),
+    path('add_usuarios1/', usuarios.views.add_usuarios1, name='add_usuarios1'),
+    path('add_usuarios2/', usuarios.views.add_usuarios2, name='add_usuarios2'),
+    path('add_usuarios3/', usuarios.views.add_usuarios3, name='add_usuarios3'),
 ]

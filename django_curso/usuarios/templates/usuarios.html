@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Usuarios
+{% endblock title %}
+
+{% block main %}
+    <h2>Usuarios</h2>
+    <ul>
+        <li>
+            <a href="{% url 'add_usuarios1' %}">Añadir usuarios con HTML</a>
+        </li>
+        <li>
+            <a href="{% url 'add_usuarios2' %}">Añadir usuarios con Regular Forms</a>
+        </li>
+        <li>
+            <a href="{% url 'add_usuarios3' %}">Añadir usuarios con Model Forms</a>
+        </li>
+    </ul>
+
+    <div>
+        {% if user.id %}
+            <p>Se ha registrato {{ user.username }}</p>
+        
+
+        {% endif %}
+    </div>
+{% endblock main %}

@@ -14,11 +14,24 @@
 <body>
     <div class="header-wrapper">
         <header>
-            <h1 class="title">Libros de Ciencia Ficción</h1>
+            <h1 class="title">Curso de Djando</h1>
             <div class="logo">
                 <img src="{% static 'images/768px-HAL9000.png' %}" alt="Lotipo">
             </div>
         </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="{% url 'portfolio' %}">Portfolio</a>
+                </li>
+                <li>
+                    <a href="{% url 'libros' %}">Libros</a>
+                </li>
+                <li>
+                    <a href="{% url 'usuarios' %}">Usuarios</a>
+                </li>
+            </ul>
+        </nav>
     </div>
     <main>
         {% block main %}

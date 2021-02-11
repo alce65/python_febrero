@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Añadir Usuarios
+{% endblock title %}
+
+{% block main %}
+    <h2>Añadir Usuarios</h2>
+    <form class="user" action="{% url 'usuarios' %}" method="POST">
+        {% csrf_token %}
+
+        {% for field in form %}
+            <div class="form-group">   
+                {{ field.label_tag }} 
+                {{ field }}
+            </div>
+        {% endfor %}
+
+        <button type="submit">Añadir</button>
+    </form>
+{% endblock main %}
