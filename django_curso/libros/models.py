@@ -12,6 +12,7 @@ class Libro(models.Model) :
     editorial = models.CharField(max_length=100)
     descripcion = models.TextField(blank=True)
     genero = models.IntegerField(choices=GENEROS, blank=True)
+    portada = models.ImageField(upload_to="static/images_db")
 
     def __str__(self):
         return f'{self.titulo} ({self.anio})'

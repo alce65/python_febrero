@@ -1,12 +1,23 @@
 {% extends "base.html" %}
 
 {% block title %}
-    Libros
+    Autor {{ autor.id }}
 {% endblock title %}
 
+
+
 {% block main %}
+    <div class="autor">
+        <header>
+            <h2>{{autor.nombre}} {{autor.apellidos}}</h2>
+        </header>
+        <div class="main">
+            <p>{{autor.lugar_nacim}}</p>
+            <p>{{autor.fecha_nacim | date:"d M Y"}}</p>    
+        </div>        
+
+    </div>
     <div class="libros">
-        <h2>Lista de libros</h2>
         <ul>
             {% for libro in libros %}
             <li>
@@ -15,13 +26,11 @@
                         {{ libro.titulo }}
                     </p>
                 </a>
-
                 <p>
                     {% for autor in libro.autor.all %}
-                    <a class="autor" href="{% url 'autor' autor.id %}">
-                        {{autor.nombre}} {{autor.apellidos}}
+                    <a href="{% url 'autor' autor.id %}">
+                        <span> {{autor.nombre}} {{autor.apellidos}} </span>
                     </a>
-                    
                     {% endfor %}
                 </p>
             </li>
@@ -29,6 +38,8 @@
         </ul>        
     </div>
 
-    
+    <footer class="back">
+        <a href="{% url 'libros'  %}">Volver</a>    
+    </footer>
 
-{% endblock main %}
+{% endblock%}

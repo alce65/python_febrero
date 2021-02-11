@@ -25,4 +25,5 @@ urlpatterns = [
     path('portfolio/', portfolio.views.portfolio, name='portfolio'),
     path('libros/', libros.views.libros, name='libros'),
     path('libros/<int:libro_id>', libros.views.libro_detail, name='libro'),
+    path('autor/<int:autor_id>', libros.views.autor, name='autor'),
 ]
